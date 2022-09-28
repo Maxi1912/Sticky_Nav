@@ -1,0 +1,41 @@
+body {
+    background-color: darkgrey;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 100px 30px;
+    text-align: center;
+    background-image: url(./assets/natural.jpeg);
+    color: white;
+}
+ul {
+    margin: 0;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    padding: 10px;
+}
+
+li {
+    margin: 5px;
+}
+li:first-child {
+    margin-left: 15px;
+}
+li:last-child {
+    margin-right: 15px;
+}
+
+.wrapper {
+    margin: 25px auto;
+    width: 60%;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    background-color: white;
+}
+
