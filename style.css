@@ -16,6 +16,9 @@ body {
 .fixed-nav li.logo {
   max-width: 500px;
 }
+.fixed-nav .wrapper {
+  transform: scale(1);
+}
 h1 {
   margin: 0;
   padding: 100px 30px;
@@ -26,19 +29,26 @@ h1 {
   background-size: cover;
   color: white;
 }
+nav {
+  background-color: black;
+  top: 0;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s;
+  width: 100%;
+}
 ul {
   margin: 0;
   padding: 0;
-  padding-right: 10%;
   list-style-type: none;
-  background-color: black;
   color: white;
   display: flex;
-  justify-content: space-between;
   font-size: 2em;
 }
 li {
+  flex: 1;
   line-height: 2em;
+  text-align: center;
 }
 
 li.logo {
@@ -54,9 +64,13 @@ li.logo {
 
 .wrapper {
   margin: 0 auto;
-  width: 60%;
+  max-width: 60%;
   border: 1px solid gainsboro;
-  padding: 10px;
+  padding: 3%;
   background-color: white;
   margin-top: 100px;
+  text-align: justify;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  transform: scale(0.98);
+  transition: transform 0.5s;
 }
